@@ -10,7 +10,9 @@ func main() {
 
 	for i := 1; i <= 3; i++ {
 		fmt.Printf("おみくじ%d回目：", i)
+
 		num = rand.Intn(6)
+
 		switch num {
 		case 0:
 			fmt.Println("凶😨")

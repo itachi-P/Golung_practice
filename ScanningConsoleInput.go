@@ -4,6 +4,7 @@ import "fmt"
 
 func main() {
 	var input string
+
 	fmt.Println("文字列を入力してください。")
 
 	fmt.Scan(&input)

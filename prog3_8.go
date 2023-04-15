@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	totalScore := ask(1, "dog")
 	totalScore += ask(2, "cat")
-	totalScore += ask(3, "fish")
+	totalScore += ask(3, "ferret")
 
 	fmt.Println("スコア", totalScore)
 }
@@ -20,7 +20,7 @@ func ask(number int, question string) int {
 		return 10
 
 	} else {
-		fmt.Println("不正解!")
+		fmt.Println("不正解…")
 		return 0
 	}
 }

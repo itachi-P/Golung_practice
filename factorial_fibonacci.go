@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// fibonacciはn番目のフィボナッチ数を返します。
+// n番目のフィボナッチ数を返す再帰関数
 func fibonacci(n int) int {
 	if n < 2 {
 		return n

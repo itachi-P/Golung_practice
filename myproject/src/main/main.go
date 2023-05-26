@@ -1,10 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"gosample"
+	"example.com/gosample"
 )
 
 func main() {
-	fmt.Println(gosample.Message)
+	gosample.Hello("Gopher")
 }

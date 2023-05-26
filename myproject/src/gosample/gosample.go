@@ -1,3 +1,9 @@
 package gosample
 
-var Message string = "Hello, World!"
+import "fmt"
+
+var Message string = "Hello, %s!\n"
+
+func Hello(name string) {
+	fmt.Printf(Message, name)
+}

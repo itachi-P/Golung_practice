@@ -9,7 +9,7 @@ func main() {
 	var num int
 
 	for i := 1; i <= 3; i++ {
-		fmt.Printf("おみくじ%d回目：", i)
+		fmt.Printf("おみくじ%d回目:", i)
 
 		num = rand.Intn(6)
 

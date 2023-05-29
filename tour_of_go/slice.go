@@ -4,14 +4,13 @@ import "fmt"
 
 //可変長のSliceと固定長配列Array
 /* Goでは配列(Array)は固定長
-スライスは配列（の部分列）への参照のようなもの
-実はスライス自体にはどんなデータも格納していない */
+スライスは配列（の部分列）への参照のようなもの */
 
 func main() {
 	//[6]と明記する代わりに[...]で自動的に要素数が計測される
 	arr_primes := [...]int{2, 3, 5, 7, 11, 13}
 	//元の配列の1~3番目の要素を切り出し新たなSliceを生成
-	var s []int = arr_primes[1:4] //0及び4番目は含まれない
+	var s []int = arr_primes[1:4] //index1~(4-1)番目を切り出す
 	fmt.Println(s)                //=>{3, 5, 7}
 
 	//配列から切り出したSliceを変更すると参照元の対応する要素も変更される
@@ -48,7 +47,7 @@ func main() {
 	//[:]と省略した場合は先頭から最後尾、つまり全要素
 	slice := array[1:]
 	fmt.Println(len(slice)) //要素数は"Java","Ruby"の2つ
-	//スライスの最初の要素から数えて、元となる配列に対応するindex
+	//capの値はスライスの最初の要素から数えて、元となる配列の要素数
 	fmt.Println(cap(slice), cap(array)) //cap(array)は固定値3
 
 	slice[0] = "Golang"       //slice[0]の要素を変更

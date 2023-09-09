@@ -20,5 +20,10 @@
 # Go workspace file
 go.work
 
+# Other
+.DS_Store
+*/bin/
+*/pkg/
+
 # Paiza Skill Test
 paiza/
